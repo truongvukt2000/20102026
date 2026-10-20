@@ -1,0 +1,1121 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Gửi em người yêu của anh! ❤️</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+      }
+
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #040716;
+        font-family: 'Quicksand', sans-serif;
+        color: #ffffff;
+      }
+
+      .font-cursive {
+        font-family: 'Dancing Script', cursive;
+      }
+
+      /* Creator Badge Style */
+      .creator-badge {
+        background: rgba(15, 23, 42, 0.65);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(125, 211, 252, 0.3);
+        box-shadow:
+          0 8px 24px rgba(0, 0, 0, 0.4),
+          0 0 15px rgba(56, 189, 248, 0.2);
+        transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+
+      .creator-badge:hover {
+        transform: translateY(-2px) scale(1.04);
+        border-color: rgba(125, 211, 252, 0.7);
+        box-shadow:
+          0 12px 30px rgba(0, 0, 0, 0.5),
+          0 0 25px rgba(56, 189, 248, 0.45);
+        background: rgba(15, 23, 42, 0.85);
+      }
+
+      /* Glowing Sky Title */
+      .glow-title {
+        color: #eef8ff;
+        text-shadow:
+          0 0 8px rgba(255, 255, 255, 0.95),
+          0 0 18px rgba(125, 211, 252, 0.85),
+          0 0 36px rgba(56, 189, 248, 0.65);
+        animation: titleBreathe 4s ease-in-out infinite;
+      }
+
+      @keyframes titleBreathe {
+        0%,
+        100% {
+          transform: translateY(0px);
+          filter: brightness(1);
+        }
+        50% {
+          transform: translateY(-4px);
+          filter: brightness(1.1);
+        }
+      }
+
+      /* Hold Button Ripples */
+      .hold-ripple {
+        position: absolute;
+        border-radius: 9999px;
+        border: 1.5px solid rgba(125, 211, 252, 0.6);
+        box-shadow: 0 0 18px rgba(56, 189, 248, 0.4);
+        animation: rippleOut 2.3s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+        pointer-events: none;
+      }
+      .hold-ripple-2 {
+        animation-delay: 0.75s;
+      }
+      .hold-ripple-3 {
+        animation-delay: 1.5s;
+      }
+
+      @keyframes rippleOut {
+        0% {
+          width: 64px;
+          height: 64px;
+          opacity: 0.95;
+        }
+        100% {
+          width: 160px;
+          height: 160px;
+          opacity: 0;
+        }
+      }
+
+      /* Envelope Card */
+      .envelope-card {
+        background: linear-gradient(180deg, #fffdf9 0%, #f5e5cc 100%);
+        border: 2px solid #e2c59f;
+        box-shadow:
+          0 14px 34px rgba(0, 0, 0, 0.58),
+          0 0 26px rgba(255, 215, 175, 0.45);
+        transition: all 0.4s ease;
+      }
+
+      /* Vintage Letter Sheet Modal */
+      .vintage-letter-modal {
+        filter: drop-shadow(0 22px 42px rgba(0, 0, 0, 0.72))
+          drop-shadow(0 0 24px rgba(255, 220, 185, 0.35));
+        transition: all 0.4s ease;
+      }
+
+      .vintage-letter-paper {
+        background:
+          radial-gradient(
+            circle at 18% 18%,
+            rgba(255, 255, 255, 0.75) 0%,
+            transparent 55%
+          ),
+          radial-gradient(
+            circle at 82% 85%,
+            rgba(216, 178, 132, 0.38) 0%,
+            transparent 60%
+          ),
+          linear-gradient(168deg, #fffcf6 0%, #f7e9d3 52%, #ecd6b6 100%);
+        color: #463020;
+        clip-path: polygon(
+          1.5% 2.2%,
+          5% 0.8%,
+          9% 2%,
+          14% 0.7%,
+          19% 1.9%,
+          24% 0.6%,
+          29% 1.8%,
+          35% 0.6%,
+          41% 1.8%,
+          47% 0.5%,
+          53% 1.8%,
+          59% 0.6%,
+          65% 1.9%,
+          71% 0.7%,
+          77% 2%,
+          83% 0.7%,
+          89% 1.9%,
+          94% 0.8%,
+          98.5% 2.2%,
+          99.3% 7%,
+          98.2% 13%,
+          99.4% 19%,
+          98.3% 25%,
+          99.5% 32%,
+          98.3% 39%,
+          99.5% 46%,
+          98.2% 53%,
+          99.4% 60%,
+          98.3% 67%,
+          99.5% 74%,
+          98.2% 81%,
+          99.4% 88%,
+          98.3% 94%,
+          98.8% 97.8%,
+          94% 99.2%,
+          88% 98.1%,
+          82% 99.4%,
+          76% 98.2%,
+          70% 99.4%,
+          64% 98.1%,
+          58% 99.4%,
+          52% 98.2%,
+          46% 99.5%,
+          40% 98.1%,
+          34% 99.4%,
+          28% 98.2%,
+          22% 99.3%,
+          16% 98.1%,
+          10% 99.2%,
+          5% 98.1%,
+          1.2% 97.8%,
+          0.6% 92%,
+          1.8% 85%,
+          0.5% 78%,
+          1.7% 71%,
+          0.5% 64%,
+          1.7% 57%,
+          0.5% 50%,
+          1.7% 43%,
+          0.5% 36%,
+          1.7% 29%,
+          0.5% 22%,
+          1.7% 15%,
+          0.6% 8%
+        );
+        box-shadow: inset 0 0 38px rgba(176, 132, 85, 0.35);
+      }
+
+      .letter-scroll::-webkit-scrollbar {
+        width: 4px;
+      }
+      .letter-scroll::-webkit-scrollbar-thumb {
+        background: rgba(180, 135, 90, 0.45);
+        border-radius: 9999px;
+      }
+    </style>
+  </head>
+  <body class="relative w-full h-full overflow-hidden select-none">
+    <!-- 0. CREATOR BADGE -->
+    <a
+      href="https://guns.lol/nguyenbao.dev"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="creator-badge fixed top-3 left-3 sm:top-4 sm:left-4 z-[200] flex items-center gap-2 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-full cursor-pointer text-xs sm:text-sm font-medium tracking-wide"
+    >
+      <span class="relative flex h-2 w-2 sm:h-2.5 sm:w-2.5">
+        <span
+          class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"
+        ></span>
+        <span
+          class="relative inline-flex rounded-full h-2 w-2 sm:h-2.5 sm:w-2.5 bg-sky-400"
+        ></span>
+      </span>
+      <span class="text-sky-200 opacity-80 text-[11px] sm:text-xs"
+        >Created by:</span
+      >
+      <span
+        class="font-semibold text-sky-100 hover:text-white transition-colors"
+        >guns.lol/nguyenbao.dev</span
+      >
+      <span class="text-sky-300 text-xs">↗</span>
+    </a>
+
+    <!-- 1. CANVAS -->
+    <canvas
+      id="sceneCanvas"
+      class="fixed inset-0 w-full h-full z-0 pointer-events-none"
+    ></canvas>
+
+    <!-- 2. TITLE -->
+    <div
+      id="skyTitle"
+      class="fixed top-12 sm:top-14 left-0 right-0 z-10 text-center px-4 pointer-events-none opacity-0 transition-all duration-1000 transform translate-y-2"
+    >
+      <h1 class="font-cursive text-[30px] sm:text-5xl glow-title leading-tight">
+        Chúc mừng ngày phụ nữ Việt Nam
+      </h1>
+      <p class="font-cursive text-3xl sm:text-5xl glow-title -mt-0.5">20/10</p>
+    </div>
+
+    <!-- 3. GIFT BUTTON -->
+    <div
+      id="holdStage"
+      class="fixed inset-x-0 bottom-12 sm:bottom-14 z-40 flex flex-col items-center justify-center transition-all duration-700"
+    >
+      <p
+        class="text-sky-100/95 text-sm sm:text-base font-medium tracking-wide mb-4 drop-shadow-[0_0_10px_rgba(125,211,252,0.85)]"
+      >
+        Chạm để mở quà
+      </p>
+      <div class="relative flex items-center justify-center w-24 h-24">
+        <div class="hold-ripple"></div>
+        <div class="hold-ripple hold-ripple-2"></div>
+        <div class="hold-ripple hold-ripple-3"></div>
+
+        <svg
+          class="absolute w-20 h-20 -rotate-90 pointer-events-none"
+          viewBox="0 0 100 100"
+        >
+          <circle
+            cx="50"
+            cy="50"
+            r="40"
+            fill="none"
+            stroke="rgba(125, 211, 252, 0.22)"
+            stroke-width="5"
+          />
+          <circle
+            id="holdRing"
+            cx="50"
+            cy="50"
+            r="40"
+            fill="none"
+            stroke="#bae6fd"
+            stroke-width="5"
+            stroke-linecap="round"
+            stroke-dasharray="251.2"
+            stroke-dashoffset="251.2"
+            style="filter: drop-shadow(0 0 8px #38bdf8)"
+          />
+        </svg>
+
+        <button
+          id="btnHold"
+          class="relative z-10 w-14 h-14 rounded-full bg-gradient-to-b from-sky-200 via-sky-400 to-blue-600 flex items-center justify-center shadow-[0_0_32px_rgba(56,189,248,0.95)] active:scale-95 transition-transform cursor-pointer focus:outline-none"
+          aria-label="Chạm để mở quà"
+        >
+          <span class="text-xl drop-shadow">🌷</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- 4. ENVELOPE CARD -->
+    <div
+      id="envelopeCard"
+      role="button"
+      class="envelope-card fixed z-[150] opacity-0 pointer-events-none w-[275px] sm:w-[330px] rounded-2xl px-5 py-3.5 text-center cursor-pointer transition-all duration-500"
+      style="
+        top: 56%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.65) rotate(-1.5deg);
+      "
+    >
+      <div
+        class="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-rose-500 text-white flex items-center justify-center shadow-md border-2 border-white animate-bounce pointer-events-none"
+      >
+        <span class="text-xs">❤</span>
+      </div>
+
+      <div
+        class="border-b border-dashed border-[#d4b288] pb-1.5 mb-1.5 pointer-events-none"
+      >
+        <h3
+          class="font-cursive text-2xl sm:text-[28px] font-bold text-[#4d321e] leading-tight"
+        >
+          Gửi em <span class="text-rose-500">người yêu của anh!</span> ❤️
+        </h3>
+      </div>
+
+      <p
+        class="font-cursive text-base sm:text-lg text-[#6e4c32] pointer-events-none flex items-center justify-center gap-1"
+      >
+        <span>Chạm vào thư để mở lời chúc...</span>
+        <span class="text-rose-500 text-sm">💌</span>
+      </p>
+    </div>
+
+    <!-- 5. VINTAGE LETTER MODAL -->
+    <div
+      id="letterBackdrop"
+      class="fixed inset-0 z-[160] flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300 bg-black/40 backdrop-blur-sm"
+    >
+      <div
+        id="vintageLetterModal"
+        class="vintage-letter-modal relative w-[92vw] max-w-[395px] sm:max-w-[430px] transform scale-90 transition-transform duration-300"
+      >
+        <div
+          class="absolute -top-2.5 -right-2.5 z-30 w-8 h-8 rounded-full bg-rose-500 text-white flex items-center justify-center shadow-lg border-2 border-[#fff9f0]"
+        >
+          <span class="text-xs">❤</span>
+        </div>
+
+        <div
+          class="vintage-letter-paper relative px-6 py-6 sm:px-8 sm:py-7 max-h-[70vh] overflow-y-auto letter-scroll"
+        >
+          <div
+            class="absolute top-3 right-5 pointer-events-none flex items-center gap-1 opacity-80"
+          >
+            <span class="text-rose-400 text-[10px] rotate-12">❤</span>
+            <span class="text-rose-500 text-xs -rotate-12">❤</span>
+          </div>
+
+          <h2
+            class="font-cursive text-2xl sm:text-[28px] font-bold text-center text-[#4a301d] mb-3 leading-snug"
+          >
+            Gửi em <span class="text-rose-500">người yêu của anh!</span> ❤️
+          </h2>
+
+          <!-- ĐÃ ĐIỀN ĐẦY ĐỦ NỘI DUNG LỜI CHÚC TRỰC TIẾP VÀO ĐÂY -->
+          <div
+            class="font-cursive text-[18px] sm:text-[21px] leading-[1.6] text-[#4a311f] space-y-3"
+          >
+            <p>
+              Nhân ngày Phụ nữ Việt Nam 20/10, anh chúc em của anh luôn mạnh
+              khoẻ, bình an, luôn xinh đẹp, vui vẻ và ngập tràn hạnh phúc.
+            </p>
+            <p>
+              Cảm ơn em vì đã xuất hiện trong cuộc đời anh, mang đến những tiếng
+              cười, sự dịu dàng và tình yêu ấm áp, khiến mỗi ngày bên em đều trở
+              nên thật đặc biệt, mặc dù hay cãi nhau nhiều nhưng mong rằng sẽ
+              hiểu nhau hơn.
+            </p>
+            <p>
+              Chúc em luôn luôn hạnh phúc, mãi giữ nụ cười yêu đời và có thật
+              nhiều điều vui vẻ hơn trong cuộc sống.
+            </p>
+            <p>
+              Anh cũng xin lỗi vì đã làm em buồn nhiều, xin lỗi em nhiều lắm!
+            </p>
+            <p class="pt-2 text-center text-rose-600">
+              <strong>Thương em nhiều! ❤️🌷</strong>
+            </p>
+          </div>
+
+          <div class="mt-6 text-center">
+            <button
+              id="btnCloseLetter"
+              class="px-6 py-2 rounded-full bg-[#e6ccb0] hover:bg-rose-500 hover:text-white text-[#523622] text-sm font-bold border border-[#cda882] transition shadow-md cursor-pointer active:scale-95"
+            >
+              Đóng thư
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      /*************************************************************************
+       * AUDIO SYNTHESIZER
+       *************************************************************************/
+      let audioCtx = null;
+      let isMusicPlaying = false;
+      let noteIndex = 0;
+
+      const ROMANTIC_MELODY = [
+        { m: 523.25, c: [261.63, 329.63, 392.0] },
+        { m: 659.25, c: [261.63, 329.63] },
+        { m: 783.99, c: [246.94, 392.0] },
+        { m: 659.25, c: [329.63] },
+        { m: 698.46, c: [220.0, 349.23, 440.0] },
+        { m: 659.25, c: [220.0, 329.63] },
+        { m: 587.33, c: [293.66, 349.23] },
+        { m: 523.25, c: [196.0, 293.66, 392.0] },
+      ];
+
+      function ensureAudio() {
+        if (!audioCtx) {
+          const AC = window.AudioContext || window.webkitAudioContext;
+          if (AC) audioCtx = new AC();
+        }
+        if (audioCtx && audioCtx.state === 'suspended') {
+          audioCtx.resume();
+        }
+      }
+
+      function playPianoNote(freq, dur = 1.6, vol = 0.055) {
+        if (!audioCtx || !isMusicPlaying) return;
+        const now = audioCtx.currentTime;
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(freq, now);
+        gain.gain.setValueAtTime(0.0008, now);
+        gain.gain.linearRampToValueAtTime(vol, now + 0.04);
+        gain.gain.exponentialRampToValueAtTime(0.0005, now + dur);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(now);
+        osc.stop(now + dur);
+      }
+
+      function playSparkleChime() {
+        ensureAudio();
+        if (!audioCtx) return;
+        const notes = [587.33, 783.99, 987.77, 1174.66, 1567.98];
+        notes.forEach((f, i) => {
+          setTimeout(() => {
+            const now = audioCtx.currentTime;
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.type = 'triangle';
+            osc.frequency.setValueAtTime(f, now);
+            gain.gain.setValueAtTime(0.001, now);
+            gain.gain.linearRampToValueAtTime(0.045, now + 0.02);
+            gain.gain.exponentialRampToValueAtTime(0.0006, now + 0.65);
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.start(now);
+            osc.stop(now + 0.65);
+          }, i * 65);
+        });
+      }
+
+      function startMusic() {
+        ensureAudio();
+        if (isMusicPlaying) return;
+        isMusicPlaying = true;
+        setInterval(() => {
+          if (!isMusicPlaying) return;
+          const step = ROMANTIC_MELODY[noteIndex % ROMANTIC_MELODY.length];
+          playPianoNote(step.m, 1.85, 0.06);
+          step.c.forEach((cf, idx) => {
+            setTimeout(() => playPianoNote(cf, 2.1, 0.03), idx * 90);
+          });
+          noteIndex++;
+        }, 670);
+      }
+
+      /*************************************************************************
+       * CANVAS GRAPHICS
+       *************************************************************************/
+      const canvas = document.getElementById('sceneCanvas');
+      const ctx = canvas.getContext('2d');
+      let W = window.innerWidth;
+      let H = window.innerHeight;
+
+      let appState = 'HOLD';
+      let growStartTime = 0;
+
+      function clamp01(v) {
+        return Math.max(0, Math.min(1, v));
+      }
+      function easeOutCubic(t) {
+        return 1 - Math.pow(1 - clamp01(t), 3);
+      }
+      function easeOutBack(t) {
+        t = clamp01(t);
+        const c1 = 1.70158;
+        const c3 = c1 + 1;
+        return 1 + c3 * Math.pow(t - 1, 3) + c1 * Math.pow(t - 1, 2);
+      }
+
+      const stars = [];
+      const grassBlades = [];
+      const fireflies = [];
+
+      const TULIP_DEFS = [
+        {
+          id: 0,
+          tx: -34,
+          ty: -236,
+          bx: -6,
+          angle: -0.09,
+          scale: 0.98,
+          stemStart: 0.08,
+          bloomStart: 0.8,
+          layer: 1,
+          phase: 0.4,
+        },
+        {
+          id: 1,
+          tx: 34,
+          ty: -236,
+          bx: 6,
+          angle: 0.09,
+          scale: 0.98,
+          stemStart: 0.14,
+          bloomStart: 0.86,
+          layer: 1,
+          phase: 1.7,
+        },
+        {
+          id: 2,
+          tx: 0,
+          ty: -202,
+          bx: 0,
+          angle: 0.0,
+          scale: 1.04,
+          stemStart: 0.02,
+          bloomStart: 0.75,
+          layer: 2,
+          phase: 1.1,
+        },
+        {
+          id: 3,
+          tx: -90,
+          ty: -214,
+          bx: -15,
+          angle: -0.25,
+          scale: 0.93,
+          stemStart: 1.35,
+          bloomStart: 1.68,
+          layer: 0,
+          phase: 2.8,
+        },
+        {
+          id: 4,
+          tx: 90,
+          ty: -214,
+          bx: 15,
+          angle: 0.25,
+          scale: 0.93,
+          stemStart: 1.4,
+          bloomStart: 1.73,
+          layer: 0,
+          phase: 4.1,
+        },
+        {
+          id: 5,
+          tx: 0,
+          ty: -252,
+          bx: 0,
+          angle: 0.0,
+          scale: 0.92,
+          stemStart: 1.38,
+          bloomStart: 1.7,
+          layer: 0,
+          phase: 5.4,
+        },
+        {
+          id: 6,
+          tx: -60,
+          ty: -184,
+          bx: -11,
+          angle: -0.17,
+          scale: 0.99,
+          stemStart: 1.44,
+          bloomStart: 1.76,
+          layer: 2,
+          phase: 3.3,
+        },
+        {
+          id: 7,
+          tx: 60,
+          ty: -184,
+          bx: 11,
+          angle: 0.17,
+          scale: 0.99,
+          stemStart: 1.48,
+          bloomStart: 1.8,
+          layer: 2,
+          phase: 5.0,
+        },
+        {
+          id: 8,
+          tx: -106,
+          ty: -156,
+          bx: -19,
+          angle: -0.34,
+          scale: 0.95,
+          stemStart: 1.54,
+          bloomStart: 1.86,
+          layer: 3,
+          phase: 0.9,
+        },
+        {
+          id: 9,
+          tx: 106,
+          ty: -156,
+          bx: 19,
+          angle: 0.34,
+          scale: 0.95,
+          stemStart: 1.58,
+          bloomStart: 1.9,
+          layer: 3,
+          phase: 2.2,
+        },
+        {
+          id: 10,
+          tx: 0,
+          ty: -148,
+          bx: 0,
+          angle: 0.0,
+          scale: 1.06,
+          stemStart: 1.62,
+          bloomStart: 1.94,
+          layer: 3,
+          phase: 3.9,
+        },
+      ];
+
+      const LEAF_DEFS = [
+        {
+          tx: -64,
+          ty: -242,
+          cx: -48,
+          cy: -140,
+          w: 20,
+          delay: 0.25,
+          phase: 1.4,
+          back: true,
+        },
+        {
+          tx: 64,
+          ty: -242,
+          cx: 48,
+          cy: -140,
+          w: 20,
+          delay: 0.3,
+          phase: 3.2,
+          back: true,
+        },
+        {
+          tx: 0,
+          ty: -258,
+          cx: 5,
+          cy: -150,
+          w: 19,
+          delay: 0.2,
+          phase: 4.0,
+          back: true,
+        },
+        {
+          tx: -116,
+          ty: -196,
+          cx: -84,
+          cy: -112,
+          w: 22,
+          delay: 1.42,
+          phase: 0.5,
+          back: true,
+        },
+        {
+          tx: 116,
+          ty: -196,
+          cx: 84,
+          cy: -112,
+          w: 22,
+          delay: 1.46,
+          phase: 2.1,
+          back: true,
+        },
+        {
+          tx: -84,
+          ty: -142,
+          cx: -60,
+          cy: -95,
+          w: 18,
+          delay: 1.52,
+          phase: 2.7,
+          back: false,
+        },
+        {
+          tx: 84,
+          ty: -142,
+          cx: 60,
+          cy: -95,
+          w: 18,
+          delay: 1.56,
+          phase: 0.8,
+          back: false,
+        },
+        {
+          tx: -36,
+          ty: -136,
+          cx: -24,
+          cy: -90,
+          w: 16,
+          delay: 0.45,
+          phase: 4.5,
+          back: false,
+        },
+        {
+          tx: 36,
+          ty: -136,
+          cx: 24,
+          cy: -90,
+          w: 16,
+          delay: 0.5,
+          phase: 1.9,
+          back: false,
+        },
+      ];
+
+      function initScene() {
+        W = window.innerWidth;
+        H = window.innerHeight;
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        canvas.width = W * dpr;
+        canvas.height = H * dpr;
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+        stars.length = 0;
+        for (let i = 0; i < 180; i++) {
+          stars.push({
+            x: Math.random() * W,
+            y: Math.random() * (H * 0.75),
+            r: Math.random() * 1.3 + 0.35,
+            alpha: Math.random() * 0.65 + 0.2,
+            speed: Math.random() * 0.0028 + 0.0008,
+            phase: Math.random() * Math.PI * 2,
+          });
+        }
+
+        grassBlades.length = 0;
+        for (let i = 0; i < 280; i++) {
+          const normX = i / 280;
+          const x = normX * (W + 80) - 40;
+          grassBlades.push({
+            x,
+            h: Math.random() * 70 + 50,
+            w: Math.random() * 2 + 1.2,
+            curve: (Math.random() - 0.5) * 35,
+            speed: Math.random() * 0.0018 + 0.0011,
+            phase: Math.random() * Math.PI * 2,
+            layer: i % 3,
+          });
+        }
+      }
+
+      function drawTulipBlossom(ctx, bloom, swayTime, scale) {
+        if (bloom <= 0.01) return;
+        ctx.save();
+        const s = scale * (0.25 + 0.75 * easeOutBack(bloom));
+        ctx.scale(s, s);
+
+        const open = easeOutCubic(bloom);
+        const flutter = Math.sin(swayTime * 0.003) * 0.035 * open;
+
+        const backGrad = ctx.createLinearGradient(0, -48, 0, -10);
+        backGrad.addColorStop(0, '#ffc2d9');
+        backGrad.addColorStop(0.55, '#eb2f77');
+        backGrad.addColorStop(1, '#8f0a3c');
+
+        ctx.save();
+        ctx.rotate(-0.14 * open + flutter);
+        ctx.fillStyle = backGrad;
+        ctx.beginPath();
+        ctx.moveTo(-2, -10);
+        ctx.bezierCurveTo(-18 * open, -24, -17 * open, -44, -6 * open, -49);
+        ctx.bezierCurveTo(0, -43, 2, -26, -2, -10);
+        ctx.fill();
+        ctx.restore();
+
+        ctx.save();
+        ctx.rotate(0.14 * open - flutter);
+        ctx.fillStyle = backGrad;
+        ctx.beginPath();
+        ctx.moveTo(2, -10);
+        ctx.bezierCurveTo(18 * open, -24, 17 * open, -44, 6 * open, -49);
+        ctx.bezierCurveTo(0, -43, -2, -26, 2, -10);
+        ctx.fill();
+        ctx.restore();
+
+        const centerGrad = ctx.createLinearGradient(0, -49, 0, 2);
+        centerGrad.addColorStop(0, '#fff0f6');
+        centerGrad.addColorStop(0.22, '#ff9ec4');
+        centerGrad.addColorStop(0.65, '#e6226d');
+        centerGrad.addColorStop(1, '#990b41');
+        ctx.fillStyle = centerGrad;
+        const cw = 15.5 * (0.55 + 0.45 * open);
+        ctx.beginPath();
+        ctx.moveTo(0, 1);
+        ctx.bezierCurveTo(-cw, 1, -cw * 1.15, -32, 0, -49);
+        ctx.bezierCurveTo(cw * 1.15, -32, cw, 1, 0, 1);
+        ctx.fill();
+
+        ctx.restore();
+      }
+
+      function drawTulipLeaf(ctx, pivotX, pivotY, leaf, elapsed, time) {
+        const t = clamp01((elapsed - leaf.delay) / 0.75);
+        if (t <= 0) return;
+        const g = easeOutCubic(t);
+        const sway = Math.sin(time * 0.002 + leaf.phase) * 9 * g;
+
+        const tipX = pivotX + leaf.tx * g + sway;
+        const tipY = pivotY + leaf.ty * g;
+        const ctrlX = pivotX + leaf.cx * g + sway * 0.5;
+        const ctrlY = pivotY + leaf.cy * g;
+
+        const grad = ctx.createLinearGradient(pivotX, pivotY, tipX, tipY);
+        grad.addColorStop(0, '#194d27');
+        grad.addColorStop(0.55, '#388e48');
+        grad.addColorStop(1, '#81db8e');
+
+        ctx.fillStyle = grad;
+        ctx.beginPath();
+        ctx.moveTo(pivotX - 6, pivotY);
+        ctx.quadraticCurveTo(ctrlX - leaf.w * 0.6, ctrlY, tipX, tipY);
+        ctx.quadraticCurveTo(
+          ctrlX + leaf.w * 0.5,
+          ctrlY + 12,
+          pivotX + 6,
+          pivotY,
+        );
+        ctx.closePath();
+        ctx.fill();
+      }
+
+      function drawBouquet(ctx, time, elapsed) {
+        const bScale = Math.min(
+          1.08,
+          Math.max(0.76, Math.min(W / 430, H / 720)),
+        );
+        const centerX = W * 0.5;
+        const baseTieY = H - 102 * bScale;
+
+        ctx.save();
+        ctx.translate(centerX, baseTieY);
+        ctx.scale(bScale, bScale);
+
+        const kraftWrapProg = easeOutBack((elapsed - 1.95) / 0.85);
+        const kraftAlpha = clamp01((elapsed - 1.95) / 0.6);
+
+        if (kraftAlpha > 0) {
+          ctx.save();
+          ctx.globalAlpha = kraftAlpha;
+          const kw = 0.82 + 0.18 * kraftWrapProg;
+          ctx.scale(kw, kw);
+
+          const backKraftGrad = ctx.createLinearGradient(0, -275, 0, 0);
+          backKraftGrad.addColorStop(0, '#f3d9b1');
+          backKraftGrad.addColorStop(0.55, '#d6b080');
+          backKraftGrad.addColorStop(1, '#9c7345');
+          ctx.fillStyle = backKraftGrad;
+          ctx.beginPath();
+          ctx.moveTo(-42, 0);
+          ctx.lineTo(-148, -155);
+          ctx.lineTo(-92, -238);
+          ctx.lineTo(-62, -218);
+          ctx.lineTo(-28, -266);
+          ctx.lineTo(0, -235);
+          ctx.lineTo(28, -266);
+          ctx.lineTo(62, -218);
+          ctx.lineTo(92, -238);
+          ctx.lineTo(148, -155);
+          ctx.lineTo(42, 0);
+          ctx.closePath();
+          ctx.fill();
+          ctx.restore();
+        }
+
+        LEAF_DEFS.filter((l) => l.back).forEach((leaf) => {
+          drawTulipLeaf(ctx, 0, -10, leaf, elapsed, time);
+        });
+
+        TULIP_DEFS.forEach((tDef) => {
+          const stemGrow = clamp01((elapsed - tDef.stemStart) / 0.78);
+          if (stemGrow <= 0) return;
+
+          const g = easeOutCubic(stemGrow);
+          const endX = tDef.tx * g;
+          const endY = tDef.ty * g;
+
+          ctx.strokeStyle = '#3b9c4c';
+          ctx.lineWidth = 5.4;
+          ctx.lineCap = 'round';
+          ctx.beginPath();
+          ctx.moveTo(tDef.bx, 0);
+          ctx.quadraticCurveTo(endX * 0.45, endY * 0.55, endX, endY);
+          ctx.stroke();
+
+          const bloomProg = clamp01((elapsed - tDef.bloomStart) / 0.75);
+          ctx.save();
+          ctx.translate(endX, endY);
+          ctx.rotate(tDef.angle);
+          drawTulipBlossom(ctx, bloomProg, time + tDef.phase * 400, tDef.scale);
+          ctx.restore();
+        });
+
+        LEAF_DEFS.filter((l) => !l.back).forEach((leaf) => {
+          drawTulipLeaf(ctx, 0, -5, leaf, elapsed, time);
+        });
+
+        ctx.restore();
+      }
+
+      function renderScene(time) {
+        ctx.clearRect(0, 0, W, H);
+
+        const skyGrad = ctx.createLinearGradient(0, 0, 0, H);
+        skyGrad.addColorStop(0, '#02040a');
+        skyGrad.addColorStop(0.5, '#070f24');
+        skyGrad.addColorStop(1, '#1b2d4f');
+        ctx.fillStyle = skyGrad;
+        ctx.fillRect(0, 0, W, H);
+
+        stars.forEach((st) => {
+          const twinkle = Math.sin(time * st.speed + st.phase);
+          ctx.fillStyle = `rgba(255, 255, 255, ${clamp01(st.alpha + twinkle * 0.25)})`;
+          ctx.beginPath();
+          ctx.arc(st.x, st.y, st.r, 0, Math.PI * 2);
+          ctx.fill();
+        });
+
+        const hillGrad = ctx.createLinearGradient(0, H - 180, 0, H);
+        hillGrad.addColorStop(0, '#0a2214');
+        hillGrad.addColorStop(1, '#030c07');
+        ctx.fillStyle = hillGrad;
+        ctx.beginPath();
+        ctx.moveTo(0, H);
+        ctx.lineTo(0, H - 90);
+        ctx.bezierCurveTo(W * 0.35, H - 160, W * 0.68, H - 50, W, H - 110);
+        ctx.lineTo(W, H);
+        ctx.closePath();
+        ctx.fill();
+
+        grassBlades.forEach((gb) => {
+          const sway = Math.sin(time * gb.speed + gb.phase) * gb.curve;
+          ctx.strokeStyle = gb.layer === 0 ? '#10381d' : '#184d27';
+          ctx.lineWidth = gb.w;
+          ctx.beginPath();
+          ctx.moveTo(gb.x, H);
+          ctx.quadraticCurveTo(
+            gb.x + sway * 0.5,
+            H - gb.h * 0.6,
+            gb.x + sway,
+            H - gb.h,
+          );
+          ctx.stroke();
+        });
+
+        if (appState === 'GROWING') {
+          const elapsed = (time - growStartTime) / 1000;
+          drawBouquet(ctx, time, elapsed);
+          if (elapsed >= 3.2) {
+            appState = 'BLOOMED';
+            envelopeCard.style.pointerEvents = 'auto';
+            envelopeCard.style.opacity = '1';
+          }
+        } else if (appState === 'BLOOMED' || appState === 'LETTER_OPEN') {
+          drawBouquet(ctx, time, 3.2);
+        }
+      }
+
+      function globalLoop(timestamp) {
+        renderScene(timestamp);
+        requestAnimationFrame(globalLoop);
+      }
+
+      /*************************************************************************
+       * UI CONTROLLER
+       *************************************************************************/
+      const btnHold = document.getElementById('btnHold');
+      const holdRing = document.getElementById('holdRing');
+      const holdStage = document.getElementById('holdStage');
+      const skyTitle = document.getElementById('skyTitle');
+      const envelopeCard = document.getElementById('envelopeCard');
+      const letterBackdrop = document.getElementById('letterBackdrop');
+      const vintageLetterModal = document.getElementById('vintageLetterModal');
+      const btnCloseLetter = document.getElementById('btnCloseLetter');
+
+      let holdInterval = null;
+      let holdProgress = 0;
+
+      function startHold(e) {
+        if (appState !== 'HOLD') return;
+        e.preventDefault();
+        ensureAudio();
+        startMusic();
+
+        if (holdInterval) clearInterval(holdInterval);
+        holdInterval = setInterval(() => {
+          holdProgress += 3;
+          if (holdProgress >= 100) {
+            holdProgress = 100;
+            clearInterval(holdInterval);
+            triggerBloomSequence();
+          }
+          holdRing.style.strokeDashoffset =
+            251.2 - (holdProgress / 100) * 251.2;
+        }, 25);
+      }
+
+      function cancelHold() {
+        if (appState !== 'HOLD') return;
+        if (holdInterval) clearInterval(holdInterval);
+        holdProgress = 0;
+        holdRing.style.strokeDashoffset = 251.2;
+      }
+
+      function triggerBloomSequence() {
+        appState = 'GROWING';
+        growStartTime = performance.now();
+        playSparkleChime();
+
+        holdStage.style.opacity = '0';
+        holdStage.style.pointerEvents = 'none';
+        setTimeout(() => {
+          holdStage.style.display = 'none';
+        }, 700);
+
+        skyTitle.style.opacity = '1';
+        skyTitle.style.transform = 'translateY(0px)';
+      }
+
+      // MỞ THƯ
+      function openLetter() {
+        if (appState !== 'BLOOMED') return;
+        appState = 'LETTER_OPEN';
+        playSparkleChime();
+
+        envelopeCard.style.opacity = '0';
+        envelopeCard.style.pointerEvents = 'none';
+
+        letterBackdrop.style.pointerEvents = 'auto';
+        letterBackdrop.style.opacity = '1';
+        vintageLetterModal.style.transform = 'scale(1)';
+      }
+
+      // ĐÓNG THƯ
+      function closeLetter() {
+        playSparkleChime();
+
+        // Ẩn modal thư
+        letterBackdrop.style.opacity = '0';
+        letterBackdrop.style.pointerEvents = 'none';
+        vintageLetterModal.style.transform = 'scale(0.9)';
+
+        // Hiện lại phong bì trên bó hoa
+        setTimeout(() => {
+          envelopeCard.style.opacity = '1';
+          envelopeCard.style.pointerEvents = 'auto';
+          appState = 'BLOOMED';
+        }, 300);
+      }
+
+      btnHold.addEventListener('mousedown', startHold);
+      window.addEventListener('mouseup', cancelHold);
+      btnHold.addEventListener('touchstart', startHold, { passive: false });
+      window.addEventListener('touchend', cancelHold);
+
+      envelopeCard.addEventListener('click', openLetter);
+      btnCloseLetter.addEventListener('click', closeLetter);
+
+      window.addEventListener('resize', initScene);
+      window.addEventListener('load', () => {
+        initScene();
+        requestAnimationFrame(globalLoop);
+      });
+    </script>
+  </body>
+</html>
